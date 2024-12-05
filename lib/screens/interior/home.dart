@@ -132,7 +132,7 @@ void _filterHikes() {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20.0),
                         image: const DecorationImage(
-                          image: AssetImage('images/featured1.jpeg'),
+                          image: AssetImage('images/splash.jpeg'),
                           fit: BoxFit.cover,
                         ),
                       ),

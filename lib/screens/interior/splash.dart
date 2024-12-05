@@ -34,7 +34,7 @@ class _SplashScreenState extends State<SplashScreen> {
           // Overlay content on the image
           Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              //mainAxisAlignment: MainAxisAlignment.,
               children: [
                 // Add app logo or icon
                 Icon(Icons.hiking, size: 100, color: Colors.white),
@@ -43,8 +43,8 @@ class _SplashScreenState extends State<SplashScreen> {
                 Text(
                   'Welcome to Hike',
                   style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
+                    color: Colors.black,
+                    fontSize: 42,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

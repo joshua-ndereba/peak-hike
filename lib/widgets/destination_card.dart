@@ -31,14 +31,14 @@ class DestinationCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Use MediaQuery to adjust the card size dynamically based on the screen width
-    double cardWidth = MediaQuery.of(context).size.width * 0.6; // Adjust width to 60% of screen width
+    double cardWidth = MediaQuery.of(context).size.width * 0.5; // Adjust width to 60% of screen width
 
     return Card(
       elevation: 4.0, // Adds a subtle shadow to the card
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12.0), // Rounded corners
       ),
-      margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 8.0), // Margin around the card
+      margin: const EdgeInsets.symmetric(horizontal: 9.0, vertical: 10.0), // Margin around the card
       child: Container(
         width: cardWidth,
         decoration: BoxDecoration(
@@ -49,7 +49,7 @@ class DestinationCard extends StatelessWidget {
           ),
         ),
         child: Padding(
-          padding: const EdgeInsets.all(9.0),
+          padding: const EdgeInsets.all(70.0),
           child: Align(
             alignment: Alignment.bottomLeft, // Align text at the bottom left
             child: Container(

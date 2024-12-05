@@ -100,20 +100,28 @@ class RegistrationScreen extends StatelessWidget {
                 icon: Icons.person_2, obscureText: false,
               ),
               const SizedBox(height: 16.0),
-              MyTextField(
-                controller: passwordcont,
-                hint: "Enter Password *",
-                icon: Icons.lock,
-                obscureText: true,
+             TextField(
+            obscureText: true,
+            controller: passwordcont,
+            decoration: InputDecoration(
+              labelText: "Password",
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
               ),
-              const SizedBox(height: 16.0),
-              MyTextField(
-                controller: passwordAgain,
-                hint: "Confirm Password *",
-                icon: Icons.lock,
-                obscureText: true,
+            ),
+          ),
+          const SizedBox(height: 10),
+              TextField(
+            obscureText: true,
+            controller: passwordAgain,
+            decoration: InputDecoration(
+              labelText: "Password",
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10),
               ),
-              const SizedBox(height: 20.0),
+            ),
+          ),
+          const SizedBox(height: 10),
               CustomButton(
                 text: 'Register',
                 onPressed: () async {
