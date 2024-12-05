@@ -182,7 +182,7 @@ class _RouteTrackingPageState extends State<RouteTrackingPage> {
                 borderRadius: BorderRadius.circular(20),
                 child: GoogleMap(
                   initialCameraPosition: const CameraPosition(
-                    target: LatLng(37.42796133580664, -122.085749655962),
+                    target: LatLng(-1.2921, 36.8219),
                     zoom: 10.0,
                   ),
                   polylines: _polylines,
