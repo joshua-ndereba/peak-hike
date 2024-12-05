@@ -42,24 +42,24 @@ class DestinationCard extends StatelessWidget {
       child: Container(
         width: cardWidth,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12.0), // Rounded corners to match the card
+          borderRadius: BorderRadius.circular(19.0), // Rounded corners to match the card
           image: DecorationImage(
             image: AssetImage(imageUrl),
             fit: BoxFit.cover, // Ensures the image fills the card without distortion
           ),
         ),
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(9.0),
           child: Align(
             alignment: Alignment.bottomLeft, // Align text at the bottom left
             child: Container(
               color: Colors.black.withOpacity(0.6), // Semi-transparent background for text
-              padding: const EdgeInsets.symmetric(vertical: 4.0, horizontal: 8.0),
+              padding: const EdgeInsets.symmetric(vertical: 7.0, horizontal: 11.0),
               child: Text(
                 title,
                 style: const TextStyle(
                   color: Colors.white,
-                  fontSize: 16.0,
+                  fontSize: 15.0,
                   fontWeight: FontWeight.bold,
                 ),
                 overflow: TextOverflow.ellipsis, // Ensure text doesn't overflow

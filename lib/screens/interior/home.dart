@@ -132,31 +132,14 @@ void _filterHikes() {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20.0),
                         image: const DecorationImage(
-                          image: AssetImage('assets/images/featured1.jpeg'),
+                          image: AssetImage('images/featured1.jpeg'),
                           fit: BoxFit.cover,
                         ),
                       ),
                     ),
                     const SizedBox(height: 16.0),
 
-                    // Search Bar with rounded border and icon
-                    /*TextField(
-                      controller: _searchController,
-                      decoration: const InputDecoration(
-                        hintText: 'Search hikes by name or date',
-                        prefixIcon: Icon(Icons.search),
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                          borderSide: BorderSide(color: Colors.blue),
-                        ),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                          borderSide: BorderSide(color: Colors.blueAccent),
-                        ),
-                      ),
-                    ),*/
-
-                    const SizedBox(height: 16.0),
+                   
 
                     // Section header with a more modern font style
                     const Text(
@@ -175,17 +158,26 @@ void _filterHikes() {
                       child: Row(
                         children: [
                           DestinationCard(
-                            imageUrl: 'assets/images/featured2.jpeg',
-                            title: 'Yosemite National Park',
+                            imageUrl: 'images/karura.jpeg',
+                            title: 'Karura forest',
                           ),
                           DestinationCard(
-                            imageUrl: 'assets/images/featured3.jpeg',
-                            title: 'Glacier National Park',
+                            imageUrl: 'images/ngong.jpeg',
+                            title: 'Ngong Hills ',
                           ),
+                           DestinationCard(
+                            imageUrl: 'images/mtlongonot.jpeg',
+                            title: 'Mt. Longonot',
+                          ),
+                           DestinationCard(
+                            imageUrl: 'images/mtkenya.jpeg',
+                            title: 'Mount Kenya National Park',
+                          ),
+                          
                         ],
                       ),
                     ),
-                    const SizedBox(height: 16.0),
+                    const SizedBox(height: 40.0),
 
                     // Section for All Saved Hikes
                     const Text(
