@@ -147,7 +147,7 @@ class RegistrationScreen extends StatelessWidget {
                       'password': passwordcont.text.trim(),
                     };
                     final response = await http.post(
-                      Uri.parse("http://localhost/dashboard/hike/adddata.php"),
+                      Uri.parse("http://localhost/backend/register.php"),
                       body: body,
                     );
                     print('Response status: ${response.statusCode}');
